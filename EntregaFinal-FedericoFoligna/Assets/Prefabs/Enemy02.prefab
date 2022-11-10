@@ -1072,11 +1072,11 @@ GameObject:
   - component: {fileID: 6814851208833101517}
   - component: {fileID: 6814851208833101516}
   - component: {fileID: 6814851208833101519}
-  - component: {fileID: 7402041310690121312}
-  - component: {fileID: -4161604170968851698}
-  - component: {fileID: 4023410752365249170}
+  - component: {fileID: -7283596534412178156}
+  - component: {fileID: -1297004130035844988}
+  - component: {fileID: -4527134389526699107}
   m_Layer: 0
-  m_Name: Enemy01
+  m_Name: Enemy02
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1148,7 +1148,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7402041310690121312
+--- !u!114 &-7283596534412178156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1157,7 +1157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5931907840933714576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32350e0a7a1b0c1edb603d07892e9582, type: 3}
+  m_Script: {fileID: 11500000, guid: 6987004a0c17bb78db58b9d34f952639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Amy: {fileID: 919132149155446097, guid: 3fe39565dfc87ac85b61e26ff5296820, type: 3}
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   chaseSpeed: 0.02
   attackSpeed: 0.2
   anim: {fileID: 6814851208833101519}
---- !u!114 &-4161604170968851698
+--- !u!114 &-1297004130035844988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1174,11 +1174,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5931907840933714576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ea8e097bc64a8146aa2c987e653892b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dc8ed41c719b1d2e861a3625192c824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 3
---- !u!108 &4023410752365249170
+  enemyHealth: 8
+--- !u!108 &-4527134389526699107
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1189,7 +1189,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 0.8113208, b: 0.02300684, a: 1}
+  m_Color: {r: 0.7735849, g: 0.5217906, b: 0, a: 1}
   m_Intensity: 10
   m_Range: 5
   m_SpotAngle: 30

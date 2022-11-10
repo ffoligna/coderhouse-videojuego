@@ -5,6 +5,8 @@ using UnityEngine;
 public class Enemy01Instantiate : MonoBehaviour
 {
     public GameObject Enemy01;
+    public GameObject Enemy02;
+    public GameObject Enemy03;
     public GameObject VictoryScreen;
     public GameObject DefeatScreen;
     public GameObject HudMenu;
@@ -23,6 +25,9 @@ public class Enemy01Instantiate : MonoBehaviour
             float z = Random.Range(20f,-20f);
             Instantiate(Enemy01, new Vector3(x,y,z), Quaternion.identity);
         }
+
+        StartCoroutine(SecondWave(10));
+        StartCoroutine(ThirdWave(25));
     }
 
     // Update is called once per frame
@@ -42,6 +47,32 @@ public class Enemy01Instantiate : MonoBehaviour
             DefeatScreen.SetActive(true);
             HudMenu.SetActive(false);
             Time.timeScale = 0;
+        }
+    }
+
+    IEnumerator SecondWave(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        for (int a = 12; a > 0; --a)
+        {
+            float x = Random.Range(20f,-20f);
+            float y = -0.9379983f;
+            float z = Random.Range(20f,-20f);
+            Instantiate(Enemy02, new Vector3(x,y,z), Quaternion.identity);
+        }
+    }
+
+    IEnumerator ThirdWave(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        for (int a = 10; a > 0; --a)
+        {
+            float x = Random.Range(20f,-20f);
+            float y = -0.9379983f;
+            float z = Random.Range(20f,-20f);
+            Instantiate(Enemy03, new Vector3(x,y,z), Quaternion.identity);
         }
     }
 }

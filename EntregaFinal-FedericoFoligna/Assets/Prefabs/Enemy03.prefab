@@ -1072,11 +1072,11 @@ GameObject:
   - component: {fileID: 6814851208833101517}
   - component: {fileID: 6814851208833101516}
   - component: {fileID: 6814851208833101519}
-  - component: {fileID: 7402041310690121312}
-  - component: {fileID: -4161604170968851698}
-  - component: {fileID: 4023410752365249170}
+  - component: {fileID: -4527134389526699107}
+  - component: {fileID: -9179370442167773606}
+  - component: {fileID: -8849759308475574771}
   m_Layer: 0
-  m_Name: Enemy01
+  m_Name: Enemy03
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1148,37 +1148,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7402041310690121312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5931907840933714576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32350e0a7a1b0c1edb603d07892e9582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Amy: {fileID: 919132149155446097, guid: 3fe39565dfc87ac85b61e26ff5296820, type: 3}
-  lookSpeed: 0.2
-  chaseSpeed: 0.02
-  attackSpeed: 0.2
-  anim: {fileID: 6814851208833101519}
---- !u!114 &-4161604170968851698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5931907840933714576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ea8e097bc64a8146aa2c987e653892b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHealth: 3
---- !u!108 &4023410752365249170
+--- !u!108 &-4527134389526699107
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1189,7 +1159,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 0.8113208, b: 0.02300684, a: 1}
+  m_Color: {r: 0.6981132, g: 0, b: 0.060136247, a: 1}
   m_Intensity: 10
   m_Range: 5
   m_SpotAngle: 30
@@ -1240,6 +1210,36 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &-9179370442167773606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931907840933714576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c84037e36b01cce853a482aa0ff16d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 12
+--- !u!114 &-8849759308475574771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931907840933714576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8bfaf3163bf3dd419b4b4b322d7ca15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Amy: {fileID: 919132149155446097, guid: 3fe39565dfc87ac85b61e26ff5296820, type: 3}
+  lookSpeed: 0.3
+  chaseSpeed: 0.02
+  attackSpeed: 0.2
+  anim: {fileID: 6814851208833101519}
 --- !u!1 &6668728697394111879
 GameObject:
   m_ObjectHideFlags: 0
