@@ -114,7 +114,7 @@ void OnTriggerStay (Collider other)
 {
     if (other.gameObject.tag == "Enemy" && time <= 0)
     {
-        health -= Random.Range(2,4);
+        health -= Random.Range(6,8);
     }
 }
 

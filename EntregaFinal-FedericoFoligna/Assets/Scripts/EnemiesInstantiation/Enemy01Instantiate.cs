@@ -54,7 +54,7 @@ public class Enemy01Instantiate : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        for (int a = 12; a > 0; --a)
+        for (int a = 15; a > 0; --a)
         {
             float x = Random.Range(20f,-20f);
             float y = -0.9379983f;
@@ -67,7 +67,7 @@ public class Enemy01Instantiate : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        for (int a = 10; a > 0; --a)
+        for (int a = 12; a > 0; --a)
         {
             float x = Random.Range(20f,-20f);
             float y = -0.9379983f;

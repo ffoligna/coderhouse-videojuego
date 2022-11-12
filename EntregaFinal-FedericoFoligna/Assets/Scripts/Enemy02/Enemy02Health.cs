@@ -10,7 +10,7 @@ public class Enemy02Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemyHealth = 8;
+        enemyHealth = 9;
     }
 
     // Update is called once per frame
